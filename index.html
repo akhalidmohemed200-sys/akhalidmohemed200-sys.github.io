@@ -3,79 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>خالد | حماية و هكر أخلاقي</title>
+<title>خدمات خالد | حماية ومواقع ودراسة</title>
 <style>
-body{background:#000;color:#fff;font-family:Arial;text-align:center;margin:0}
-header{padding:40px 20px;background:#00ff88;color:#000}
-header h1{font-size:32px;margin:0}
-.box{background:#111;margin:15px;padding:20px;border-radius:15px;border:1px solid #00ff88}
-.box h2{color:#00ff88}
-.price{font-size:26px;background:#00ff88;color:#000;display:inline-block;padding:8px 25px;border-radius:20px;font-weight:bold}
-.btn{display:block;background:#25D366;color:#fff;padding:16px;margin:15px;border-radius:30px;text-decoration:none;font-weight:bold;font-size:18px}
+body{font-family:Arial,sans-serif;background:#f2f2f2;margin:0;padding:0;text-align:center}
+.header{background:#075e54;color:white;padding:30px 15px}
+.header h1{margin:0;font-size:28px}
+.header p{margin:10px 0 0}
+.container{max-width:800px;margin:auto;padding:15px}
+.card{background:white;border-radius:15px;padding:20px;margin:15px 0;box-shadow:0 2px 10px rgba(0,0,0,0.1);text-align:right}
+.card h3{margin:0;color:#075e54}
+.card p{color:#555}
+.price{font-size:22px;font-weight:bold;color:#25D366;margin:10px 0}
+.btn{display:inline-block;background:#25D366;color:white;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold;border:none;cursor:pointer;width:100%;text-align:center;font-size:16px}
+.btn-white{background:white;color:#075e54;border:2px solid #075e54}
+input,select,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:10px;box-sizing:border-box;font-size:16px;font-family:Arial}
+.form-box{background:white;border-radius:15px;padding:20px;margin-top:20px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
 </style>
 </head>
 <body>
-<header>
-<h1>خالد محمد</h1>
-<p>🛡️ الأمن السيبراني - حماية من الهكرز</p>
-<p>أحميلك حساباتك وموقعك، وأبني لك موقعك الخاص</p>
-</header>
-<h2>🔥 خدماتي وأسعاري</h2>
-<div class="box">
-<h2>🔒 حماية حسابات</h2>
-<p>واتساب - انستقرام - فيسبوك - تيك توك</p>
-<p>حماية كاملة من الاختراق والابتزاز</p>
-<div class="price">5000 ريال</div>
-</div>
-<div class="box">
-<h2>🌐 انشاء موقع</h2>
-<p>موقع خاص فيك، مثل موقعي هذا</p>
-<p>سريع - حلو - يشتغل على الجوال</p>
-<div class="price">10000 ريال</div>
-</div>
-<div class="box">
-<h2>🕵️ فحص موقع</h2>
-<p>أفحص موقعك وأطلع لك كل الثغرات</p>
-<p>مع تقرير كامل وكيف تصلحها</p>
-<div class="price">10000 ريال</div>
+
+<div class="header">
+<h1>خدمات خالد</h1>
+<p>حماية حسابات | إنشاء مواقع | فحص مواقع | مراجعة للامتحانات</p>
 </div>
 
- <div class="box">
-<h2>📚 مراجعة وتحضير للامتحانات</h2>
-<p>شرح - نماذج امتحانات - تدريب</p>
-<p>حل واجبات مع الشرح الكامل</p>
-<div class="price">10000 ريال</div>
-</div>
- <a<a class="btn" href="https://api.whatsapp.com/send?phone=967776114190&text=مرحبا خالد، أبغى خدمة من خدماتك" style="display:block;text-align:center;background:#25D366;color:#fff;padding:12px;border-radius:10px;margin:20px;text-decoration:none;font-weight:bold">اطلب عبر واتساب</a>
+<div class="container">
 
-<div style="background:#fff;padding:20px;border-radius:15px;max-width:400px;margin:20px auto;text-align:right;direction:rtl">
-<h3 style="text-align:center">اطلب خدمتك</h3>
-<label>الاسم:</label><br>
-<input id="name" type="text" placeholder="اكتب اسمك" style="width:100%;padding:10px;margin:5px 0 15px;border:1px solid #ddd;border-radius:8px"><br>
-<label>رقم الجوال:</label><br>
-<input id="phone" type="tel" placeholder="مثال: 777123456" style="width:100%;padding:10px;margin:5px 0 15px;border:1px solid #ddd;border-radius:8px"><br>
-<label>نوع الخدمة:</label><br>
-<select id="service" style="width:100%;padding:10px;margin:5px 0 15px;border:1px solid #ddd;border-radius:8px">
-<option>حماية حسابات</option>
-<option>إنشاء موقع</option>
-<option>فحص موقع</option>
-<option>مراجعة وتحضير للامتحانات</option>
-</select><br>
-<label>تفاصيل الطلب:</label><br>
-<textarea id="details" placeholder="اكتب تفاصيل طلبك هنا..." style="width:100%;padding:10px;margin:5px 0 15px;border:1px solid #ddd;border-radius:8px;height:80px"></textarea><br>
-<button onclick="sendOrder()" style="width:100%;padding:12px;background:#25D366;color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:bold">ارسال الطلب واتساب</button>
+<div class="card">
+<h3>🔒 حماية حسابات</h3>
+<p>حماية حسابك من الاختراق والسرقة وتأمينه بالكامل.</p>
+<div class="price">5,000 ريال</div>
+<button class="btn" onclick="order('حماية حسابات')">اطلب الآن</button>
 </div>
+
+<div class="card">
+<h3>🌐 إنشاء موقع</h3>
+<p>أسوي لك موقع احترافي مثل هذا الموقع، لشغلك أو متجرك.</p>
+<div class="price">10,000 ريال</div>
+<button class="btn" onclick="order('إنشاء موقع')">اطلب الآن</button>
+</div>
+
+<div class="card">
+<h3>🔍 فحص موقع</h3>
+<p>أفحص موقعك وأطلع لك كل المشاكل والحلول.</p>
+<div class="price">10,000 ريال</div>
+<button class="btn" onclick="order('فحص موقع')">اطلب الآن</button>
+</div>
+
+<div class="card">
+<h3>📚 مراجعة وتحضير للامتحانات</h3>
+<p>مراجعة وحل نماذج وتحضير كامل للامتحان.</p>
+<div class="price">10,000 ريال</div>
+<button class="btn" onclick="order('مراجعة وتحضير للامتحانات')">اطلب الآن</button>
+</div>
+
+<div class="form-box" id="orderForm">
+<h2>اطلب خدمتك</h2>
+<input type="text" id="name" placeholder="اكتب اسمك">
+<input type="tel" id="phone" placeholder="مثال: 776114190">
+<select id="service">
+<option value="">اختر الخدمة</option>
+<option>حماية حسابات - 5000</option>
+<option>إنشاء موقع - 10000</option>
+<option>فحص موقع - 10000</option>
+<option>مراجعة وتحضير للامتحانات - 10000</option>
+</select>
+<textarea id="details" placeholder="اكتب تفاصيل طلبك هنا..."></textarea>
+<button class="btn" onclick="sendWhatsApp()">ارسال الطلب واتساب</button>
+<a class="btn btn-white" style="display:block;margin-top:10px" href="https://wa.me/967776114190?text=مرحبا%20خالد،%20أبغى%20خدمة%20من%20خدماتك">كلمني واتساب مباشرة</a>
+</div>
+
+</div>
+
 <script>
-function sendOrder(){
-var name=document.getElementById('name').value;
-var phone=document.getElementById('phone').value;
-var service=document.getElementById('service').value;
-var details=document.getElementById('details').value;
-if(name==""||phone==""){alert("اكتب اسمك ورقم جوالك أولاً");return;}
-var msg="طلب جديد%0A%0Aالاسم: "+name+"%0Aرقم الجوال: "+phone+"%0Aالخدمة: "+service+"%0Aالتفاصيل: "+details;
-window.open("https://api.whatsapp.com/send?phone=967776114190&text="+msg,"_blank");
+function order(serviceName){
+  var select = document.getElementById('service');
+  for(var i=0;i<select.options.length;i++){
+    if(select.options[i].text.includes(serviceName)){
+      select.selectedIndex = i;
+      break;
+    }
+  }
+  document.getElementById('orderForm').scrollIntoView({behavior:'smooth'});
+}
+function sendWhatsApp(){
+  var name = document.getElementById('name').value;
+  var phone = document.getElementById('phone').value;
+  var service = document.getElementById('service').value;
+  var details = document.getElementById('details').value;
+  if(!name || !phone || !service){ alert('عبي الاسم والرقم والخدمة أولاً'); return; }
+  var msg = "طلب جديد%0Aالاسم: " + encodeURIComponent(name) + "%0Aرقم الجوال: " + encodeURIComponent(phone) + "%0Aالخدمة: " + encodeURIComponent(service) + "%0Aالتفاصيل: " + encodeURIComponent(details);
+  window.open("https://wa.me/967776114190?text=" + msg, "_blank");
 }
 </script>
 </body>
 </html>
-
