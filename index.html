@@ -46,7 +46,36 @@ header h1{font-size:32px;margin:0}
 <p>حل واجبات مع الشرح الكامل</p>
 <div class="price">10000 ريال</div>
 </div>
- <a class="btn" href=" href="https://api.whatsapp.com/send?phone=967776114190"، أبغى خدمة من خدماتك">💬 كلمني واتساب واطلب خدمتك</a>
-<p style="color:#888;padding:20px">© 2026 خالد محمد</p>
+ <a<a class="btn" href="https://api.whatsapp.com/send?phone=967776114190&text=مرحبا خالد، أبغى خدمة من خدماتك" style="display:block;text-align:center;background:#25D366;color:#fff;padding:12px;border-radius:10px;margin:20px;text-decoration:none;font-weight:bold">اطلب عبر واتساب</a>
+
+<div style="background:#fff;padding:20px;border-radius:15px;max-width:400px;margin:20px auto;text-align:right;direction:rtl">
+<h3 style="text-align:center">اطلب خدمتك</h3>
+<label>الاسم:</label><br>
+<input id="name" type="text" placeholder="اكتب اسمك" style="width:100%;padding:10px;margin:5px 0 15px;border:1px solid #ddd;border-radius:8px"><br>
+<label>رقم الجوال:</label><br>
+<input id="phone" type="tel" placeholder="مثال: 777123456" style="width:100%;padding:10px;margin:5px 0 15px;border:1px solid #ddd;border-radius:8px"><br>
+<label>نوع الخدمة:</label><br>
+<select id="service" style="width:100%;padding:10px;margin:5px 0 15px;border:1px solid #ddd;border-radius:8px">
+<option>حماية حسابات</option>
+<option>إنشاء موقع</option>
+<option>فحص موقع</option>
+<option>مراجعة وتحضير للامتحانات</option>
+</select><br>
+<label>تفاصيل الطلب:</label><br>
+<textarea id="details" placeholder="اكتب تفاصيل طلبك هنا..." style="width:100%;padding:10px;margin:5px 0 15px;border:1px solid #ddd;border-radius:8px;height:80px"></textarea><br>
+<button onclick="sendOrder()" style="width:100%;padding:12px;background:#25D366;color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:bold">ارسال الطلب واتساب</button>
+</div>
+<script>
+function sendOrder(){
+var name=document.getElementById('name').value;
+var phone=document.getElementById('phone').value;
+var service=document.getElementById('service').value;
+var details=document.getElementById('details').value;
+if(name==""||phone==""){alert("اكتب اسمك ورقم جوالك أولاً");return;}
+var msg="طلب جديد%0A%0Aالاسم: "+name+"%0Aرقم الجوال: "+phone+"%0Aالخدمة: "+service+"%0Aالتفاصيل: "+details;
+window.open("https://api.whatsapp.com/send?phone=967776114190&text="+msg,"_blank");
+}
+</script>
 </body>
 </html>
+
